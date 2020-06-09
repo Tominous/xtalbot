@@ -18,8 +18,8 @@ module.exports = async (xtal, reaction, user) => {
   .setTimestamp()
   .setDescription(`[Jump to Message](${message.url})`)
   .addField('Author', `${message.author.tag} | ${message.author.id}`)
-  .addField(`Reaction Info`, `${reaction.emoji} | ${reaction.emoji.name || 'No Name'} | ${reaction.emoji.id || 'No ID'}`)
-  .addField('Message Info', `${message.channel} | ${message.channel.name} | ${message.channel.id}`)
+  .addField(`Reaction Information`, `${reaction.emoji} | ${reaction.emoji.name || 'No Name'} | ${reaction.emoji.id || 'No ID'}`)
+  .addField('Message Information', `${message.channel} | ${message.channel.name} | ${message.channel.id}`)
   .setColor(colors.purple)
   .setFooter(xtal.user.username, xtal.user.avatarURL);
   
