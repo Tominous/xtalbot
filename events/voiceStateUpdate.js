@@ -20,8 +20,8 @@ module.exports = async (xtal, oldMember, newMember) => {
   .setTitle('Member Joined VC')
   .setThumbnail(newMember.user.displayAvatarURL)
   .setTimestamp()
-  .addField(`Member Info`, `${newMember.user.tag} | ${newMember.user.id}`)
-  .addField(`Voice Channel Info`, `${newchannel} | ${newchannel.name} | ${newchannel.id}`)
+  .addField(`Member Information`, `${newMember.user.tag} | ${newMember.user.id}`)
+  .addField(`Voice Channel Information`, `${newchannel} | ${newchannel.name} | ${newchannel.id}`)
   .setColor(colors.magenta)
   .setFooter(xtal.user.username, xtal.user.avatarURL);
   
@@ -40,8 +40,8 @@ module.exports = async (xtal, oldMember, newMember) => {
     .setTitle('Member Left VC')
     .setThumbnail(newMember.user.avatarURL)
     .setTimestamp()
-    .addField(`Member Info`, `${newMember.user.tag} | ${newMember.user.id}`)
-    .addField(`Voice Channel Info`, `${oldchannel} | ${oldchannel.name} | ${oldchannel.id}`)
+    .addField(`Member Information`, `${newMember.user.tag} | ${newMember.user.id}`)
+    .addField(`Voice Channel Information`, `${oldchannel} | ${oldchannel.name} | ${oldchannel.id}`)
     .setColor(colors.magenta)
     .setFooter(xtal.user.username, xtal.user.avatarURL);
     
@@ -53,9 +53,9 @@ module.exports = async (xtal, oldMember, newMember) => {
     .setTitle('Member Moved VC')
     .setThumbnail(newMember.user.avatarURL)
     .setTimestamp()
-    .addField(`Member Info`, `${newMember.user.tag} | ${newMember.user.id}`)
-    .addField(`Before VC Info`, `${oldchannel} | ${oldchannel.name} | ${oldchannel.id}`)
-    .addField(`After VC Info`, `${newchannel} | ${newchannel.name} | ${newchannel.id}`)
+    .addField(`Member Information`, `${newMember.user.tag} | ${newMember.user.id}`)
+    .addField(`Before VC Information`, `${oldchannel} | ${oldchannel.name} | ${oldchannel.id}`)
+    .addField(`After VC Information`, `${newchannel} | ${newchannel.name} | ${newchannel.id}`)
     .setColor(colors.magenta)
     .setFooter(xtal.user.username, xtal.user.avatarURL);
 
