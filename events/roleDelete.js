@@ -16,7 +16,7 @@ module.exports = async (xtal, role) => {
   .setTimestamp()
   .addField('Name', `${role.name}`)
   .addField('ID', `${role.id}`)
-  .addField('Color', `${role.hexColor}`)
+  .addField('Colour', `${role.hexColor}`)
   .setColor(colors.magenta)
   .setFooter(xtal.user.username, xtal.user.avatarURL);
   
